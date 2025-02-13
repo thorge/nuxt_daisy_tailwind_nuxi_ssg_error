@@ -4,6 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   ssr: true,
   hooks: {},
+  srcDir: 'src/',
 
   app: {
     baseURL: '/',
@@ -89,10 +90,13 @@ export default defineNuxtConfig({
     defaultLocale: "de",
     strategy: "prefix_except_default", //prefix_and_default
     detectBrowserLanguage: false,
-    vueI18n: './i18n.config.ts'
+    vueI18n: './src/i18n/i18n.config.ts'
   },
 
   vite: {
+    build: {
+      target: ["es2022", "chrome112", "edge112", "firefox112", "safari16"],
+    },
     css: {
       preprocessorOptions: {
         scss: {

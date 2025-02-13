@@ -3,4 +3,4 @@ title: 'Home'
 description: 'Home'
 ---
 
-Example
+Example EN

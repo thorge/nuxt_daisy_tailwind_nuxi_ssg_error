@@ -13,3 +13,7 @@
     </div>
   </main>
 </template>
+<script setup>
+
+const foo = ref("bar"); // Comment with toggle keyword
+</script>
